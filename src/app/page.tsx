@@ -321,7 +321,7 @@ export default function Home() {
               </h2>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
                 We are a team of passionate AI professionals dedicated to helping businesses thrive in the digital economy. 
-                With over 10 years of experience in AI and machine learning, we've successfully transformed hundreds of companies across various industries.
+                With over 10 years of experience in AI and machine learning, we&apos;ve successfully transformed hundreds of companies across various industries.
               </p>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                 <div className="text-center">
@@ -470,7 +470,7 @@ export default function Home() {
               Trusted by AI Industry Leaders
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We've partnered with companies across various sectors to deliver exceptional AI results and drive digital transformation.
+              We&apos;ve partnered with companies across various sectors to deliver exceptional AI results and drive digital transformation.
             </p>
           </div>
           
@@ -671,7 +671,7 @@ export default function Home() {
                 <div>
                   <h4 className="text-xl font-bold text-gray-900 mb-2">Email</h4>
                   <p className="text-lg text-gray-600 mb-1">parislhz@gmail.com</p>
-                  <p className="text-sm text-gray-500">We'll respond within 24 hours</p>
+                  <p className="text-sm text-gray-500">We&apos;ll respond within 24 hours</p>
                 </div>
               </div>
               
@@ -713,7 +713,7 @@ export default function Home() {
             Ready to Transform Your Business with AI?
           </h2>
           <p className="text-xl text-blue-50 mb-8">
-            Let's discuss how we can help you achieve your AI transformation goals.
+            Let&apos;s discuss how we can help you achieve your AI transformation goals.
           </p>
           <a href="#contact" className="bg-amber-500 text-white hover:bg-amber-600 px-8 py-4 rounded-lg text-lg font-semibold transition-colors inline-block">
             Schedule a Consultation
