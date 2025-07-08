@@ -1,0 +1,62 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="statsGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fde68a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#statsGradient)"/>
+  
+  <!-- Chart background -->
+  <rect x="50" y="50" width="300" height="200" fill="#ffffff" stroke="#d1d5db" stroke-width="2" rx="8"/>
+  
+  <!-- Grid lines -->
+  <line x1="50" y1="100" x2="350" y2="100" stroke="#e5e7eb" stroke-width="1"/>
+  <line x1="50" y1="150" x2="350" y2="150" stroke="#e5e7eb" stroke-width="1"/>
+  <line x1="50" y1="200" x2="350" y2="200" stroke="#e5e7eb" stroke-width="1"/>
+  <line x1="100" y1="50" x2="100" y2="250" stroke="#e5e7eb" stroke-width="1"/>
+  <line x1="150" y1="50" x2="150" y2="250" stroke="#e5e7eb" stroke-width="1"/>
+  <line x1="200" y1="50" x2="200" y2="250" stroke="#e5e7eb" stroke-width="1"/>
+  <line x1="250" y1="50" x2="250" y2="250" stroke="#e5e7eb" stroke-width="1"/>
+  <line x1="300" y1="50" x2="300" y2="250" stroke="#e5e7eb" stroke-width="1"/>
+  
+  <!-- Bar chart -->
+  <rect x="70" y="180" width="20" height="50" fill="#f59e0b" opacity="0.8"/>
+  <rect x="120" y="160" width="20" height="70" fill="#f59e0b" opacity="0.8"/>
+  <rect x="170" y="140" width="20" height="90" fill="#f59e0b" opacity="0.8"/>
+  <rect x="220" y="120" width="20" height="110" fill="#f59e0b" opacity="0.8"/>
+  <rect x="270" y="100" width="20" height="130" fill="#f59e0b" opacity="0.8"/>
+  <rect x="320" y="80" width="20" height="150" fill="#f59e0b" opacity="0.8"/>
+  
+  <!-- Line chart -->
+  <path d="M 70 200 L 120 180 L 170 160 L 220 140 L 270 120 L 320 100" fill="none" stroke="#92400e" stroke-width="3"/>
+  <circle cx="70" cy="200" r="4" fill="#92400e"/>
+  <circle cx="120" cy="180" r="4" fill="#92400e"/>
+  <circle cx="170" cy="160" r="4" fill="#92400e"/>
+  <circle cx="220" cy="140" r="4" fill="#92400e"/>
+  <circle cx="270" cy="120" r="4" fill="#92400e"/>
+  <circle cx="320" cy="100" r="4" fill="#92400e"/>
+  
+  <!-- Labels -->
+  <text x="80" y="270" font-family="Arial, sans-serif" font-size="10" fill="#6b7280" text-anchor="middle">Q1</text>
+  <text x="130" y="270" font-family="Arial, sans-serif" font-size="10" fill="#6b7280" text-anchor="middle">Q2</text>
+  <text x="180" y="270" font-family="Arial, sans-serif" font-size="10" fill="#6b7280" text-anchor="middle">Q3</text>
+  <text x="230" y="270" font-family="Arial, sans-serif" font-size="10" fill="#6b7280" text-anchor="middle">Q4</text>
+  <text x="280" y="270" font-family="Arial, sans-serif" font-size="10" fill="#6b7280" text-anchor="middle">Q5</text>
+  <text x="330" y="270" font-family="Arial, sans-serif" font-size="10" fill="#6b7280" text-anchor="middle">Q6</text>
+  
+  <!-- Y-axis labels -->
+  <text x="40" y="55" font-family="Arial, sans-serif" font-size="10" fill="#6b7280" text-anchor="end">100%</text>
+  <text x="40" y="105" font-family="Arial, sans-serif" font-size="10" fill="#6b7280" text-anchor="end">75%</text>
+  <text x="40" y="155" font-family="Arial, sans-serif" font-size="10" fill="#6b7280" text-anchor="end">50%</text>
+  <text x="40" y="205" font-family="Arial, sans-serif" font-size="10" fill="#6b7280" text-anchor="end">25%</text>
+  
+  <!-- Chart title -->
+  <text x="200" y="35" font-family="Arial, sans-serif" font-size="14" fill="#374151" text-anchor="middle" font-weight="bold">Business Growth Metrics</text>
+  
+  <!-- Legend -->
+  <rect x="60" y="280" width="15" height="10" fill="#f59e0b" opacity="0.8"/>
+  <text x="80" y="290" font-family="Arial, sans-serif" font-size="10" fill="#374151">Revenue</text>
+  <line x1="150" y1="285" x2="165" y2="285" stroke="#92400e" stroke-width="2"/>
+  <text x="170" y="290" font-family="Arial, sans-serif" font-size="10" fill="#374151">Growth</text>
+</svg> 

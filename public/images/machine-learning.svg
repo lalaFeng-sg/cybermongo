@@ -1,0 +1,151 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="mlGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:0.8" />
+      <stop offset="50%" style="stop-color:#06b6d4;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0.8" />
+    </linearGradient>
+    <linearGradient id="dataGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#ec4899;stop-opacity:0.4" />
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#mlGradient)" opacity="0.1"/>
+  
+  <!-- Algorithm Flow -->
+  <g filter="url(#glow2)">
+    <!-- Input Data -->
+    <rect x="50" y="120" width="60" height="40" rx="8" fill="#10b981" stroke="#34d399" stroke-width="2"/>
+    <text x="80" y="145" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">DATA</text>
+    
+    <!-- Processing -->
+    <rect x="150" y="100" width="80" height="60" rx="10" fill="#06b6d4" stroke="#22d3ee" stroke-width="2"/>
+    <text x="190" y="135" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">MODEL</text>
+    
+    <!-- Output -->
+    <rect x="270" y="120" width="60" height="40" rx="8" fill="#8b5cf6" stroke="#a78bfa" stroke-width="2"/>
+    <text x="300" y="145" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">AI</text>
+    
+    <!-- Arrows -->
+    <path d="M110 140 L150 140" stroke="#10b981" stroke-width="3" marker-end="url(#arrowhead)"/>
+    <path d="M230 160 L270 160" stroke="#8b5cf6" stroke-width="3" marker-end="url(#arrowhead)"/>
+  </g>
+  
+  <!-- Data Points -->
+  <g opacity="0.8">
+    <circle cx="80" cy="100" r="3" fill="#10b981">
+      <animate attributeName="cy" values="100;90;100" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="90" cy="110" r="3" fill="#34d399">
+      <animate attributeName="cy" values="110;100;110" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="100" cy="95" r="3" fill="#10b981">
+      <animate attributeName="cy" values="95;85;95" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="110" cy="105" r="3" fill="#34d399">
+      <animate attributeName="cy" values="105;95;105" dur="2.1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Neural Network Visualization -->
+  <g opacity="0.7">
+    <!-- Input Layer -->
+    <circle cx="160" cy="80" r="4" fill="#10b981"/>
+    <circle cx="160" cy="90" r="4" fill="#34d399"/>
+    <circle cx="160" cy="100" r="4" fill="#10b981"/>
+    <circle cx="160" cy="110" r="4" fill="#34d399"/>
+    
+    <!-- Hidden Layer -->
+    <circle cx="190" cy="75" r="4" fill="#06b6d4"/>
+    <circle cx="190" cy="85" r="4" fill="#22d3ee"/>
+    <circle cx="190" cy="95" r="4" fill="#06b6d4"/>
+    <circle cx="190" cy="105" r="4" fill="#22d3ee"/>
+    <circle cx="190" cy="115" r="4" fill="#06b6d4"/>
+    
+    <!-- Output Layer -->
+    <circle cx="220" cy="85" r="4" fill="#8b5cf6"/>
+    <circle cx="220" cy="95" r="4" fill="#a78bfa"/>
+    <circle cx="220" cy="105" r="4" fill="#8b5cf6"/>
+    
+    <!-- Connections -->
+    <line x1="164" y1="80" x2="186" y2="75" stroke="#10b981" stroke-width="1" opacity="0.5"/>
+    <line x1="164" y1="80" x2="186" y2="85" stroke="#10b981" stroke-width="1" opacity="0.5"/>
+    <line x1="164" y1="90" x2="186" y2="85" stroke="#34d399" stroke-width="1" opacity="0.5"/>
+    <line x1="164" y1="90" x2="186" y2="95" stroke="#34d399" stroke-width="1" opacity="0.5"/>
+    <line x1="164" y1="100" x2="186" y2="95" stroke="#10b981" stroke-width="1" opacity="0.5"/>
+    <line x1="164" y1="100" x2="186" y2="105" stroke="#10b981" stroke-width="1" opacity="0.5"/>
+    <line x1="164" y1="110" x2="186" y2="105" stroke="#34d399" stroke-width="1" opacity="0.5"/>
+    <line x1="164" y1="110" x2="186" y2="115" stroke="#34d399" stroke-width="1" opacity="0.5"/>
+    
+    <line x1="194" y1="75" x2="216" y2="85" stroke="#06b6d4" stroke-width="1" opacity="0.5"/>
+    <line x1="194" y1="85" x2="216" y2="85" stroke="#22d3ee" stroke-width="1" opacity="0.5"/>
+    <line x1="194" y1="95" x2="216" y2="95" stroke="#06b6d4" stroke-width="1" opacity="0.5"/>
+    <line x1="194" y1="105" x2="216" y2="95" stroke="#22d3ee" stroke-width="1" opacity="0.5"/>
+    <line x1="194" y1="115" x2="216" y2="105" stroke="#06b6d4" stroke-width="1" opacity="0.5"/>
+  </g>
+  
+  <!-- Prediction Line -->
+  <g opacity="0.8">
+    <path d="M280 140 Q320 130 360 140 Q400 150 440 140" stroke="#8b5cf6" stroke-width="3" fill="none" stroke-dasharray="5,5">
+      <animate attributeName="stroke-dashoffset" values="0;10" dur="2s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Prediction Points -->
+    <circle cx="300" cy="135" r="2" fill="#a78bfa">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="340" cy="145" r="2" fill="#a78bfa">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="380" cy="135" r="2" fill="#a78bfa">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Algorithm Symbols -->
+  <g opacity="0.6">
+    <!-- Sigma Symbol -->
+    <text x="190" y="180" text-anchor="middle" fill="#06b6d4" font-family="Arial, sans-serif" font-size="20" font-weight="bold">Σ</text>
+    
+    <!-- Function Symbols -->
+    <text x="120" y="200" text-anchor="middle" fill="#10b981" font-family="Arial, sans-serif" font-size="12">f(x)</text>
+    <text x="300" y="200" text-anchor="middle" fill="#8b5cf6" font-family="Arial, sans-serif" font-size="12">ŷ</text>
+    
+    <!-- Math Symbols -->
+    <text x="190" y="220" text-anchor="middle" fill="#3b82f6" font-family="Arial, sans-serif" font-size="14">∇</text>
+    <text x="220" y="220" text-anchor="middle" fill="#ec4899" font-family="Arial, sans-serif" font-size="14">θ</text>
+  </g>
+  
+  <!-- Data Flow Animation -->
+  <g opacity="0.7">
+    <circle cx="60" cy="150" r="2" fill="#10b981">
+      <animate attributeName="cx" values="60;190;320" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="150;160;150" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="70" cy="160" r="2" fill="#34d399">
+      <animate attributeName="cx" values="70;200;330" dur="3.5s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="160;150;160" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Title -->
+  <text x="200" y="280" text-anchor="middle" fill="#10b981" font-family="Arial, sans-serif" font-size="16" font-weight="bold">
+    MACHINE LEARNING
+  </text>
+  
+  <!-- Arrow Marker Definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#10b981"/>
+    </marker>
+  </defs>
+</svg> 

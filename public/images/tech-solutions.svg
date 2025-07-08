@@ -1,0 +1,163 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="techGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0.1" />
+    </linearGradient>
+    <linearGradient id="chipGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981" />
+      <stop offset="100%" style="stop-color:#059669" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#techGradient)" rx="12"/>
+  
+  <!-- Central Chip -->
+  <g transform="translate(200, 150)">
+    <!-- Main Chip Body -->
+    <rect x="-30" y="-25" width="60" height="50" rx="8" fill="url(#chipGradient)" opacity="0.9"/>
+    <rect x="-25" y="-20" width="50" height="40" rx="4" fill="#34d399"/>
+    
+    <!-- Chip Pins -->
+    <rect x="-35" y="-20" width="5" height="8" fill="#059669"/>
+    <rect x="-35" y="-8" width="5" height="8" fill="#059669"/>
+    <rect x="-35" y="4" width="5" height="8" fill="#059669"/>
+    <rect x="-35" y="16" width="5" height="8" fill="#059669"/>
+    
+    <rect x="30" y="-20" width="5" height="8" fill="#059669"/>
+    <rect x="30" y="-8" width="5" height="8" fill="#059669"/>
+    <rect x="30" y="4" width="5" height="8" fill="#059669"/>
+    <rect x="30" y="16" width="5" height="8" fill="#059669"/>
+    
+    <!-- Circuit Lines -->
+    <line x1="-20" y1="-15" x2="20" y2="-15" stroke="#ffffff" stroke-width="1" opacity="0.8"/>
+    <line x1="-20" y1="-5" x2="20" y2="-5" stroke="#ffffff" stroke-width="1" opacity="0.8"/>
+    <line x1="-20" y1="5" x2="20" y2="5" stroke="#ffffff" stroke-width="1" opacity="0.8"/>
+    <line x1="-20" y1="15" x2="20" y2="15" stroke="#ffffff" stroke-width="1" opacity="0.8"/>
+    
+    <!-- Circuit Nodes -->
+    <circle cx="-15" cy="-15" r="2" fill="#ffffff"/>
+    <circle cx="0" cy="-15" r="2" fill="#ffffff"/>
+    <circle cx="15" cy="-15" r="2" fill="#ffffff"/>
+    <circle cx="-15" cy="-5" r="2" fill="#ffffff"/>
+    <circle cx="0" cy="-5" r="2" fill="#ffffff"/>
+    <circle cx="15" cy="-5" r="2" fill="#ffffff"/>
+    <circle cx="-15" cy="5" r="2" fill="#ffffff"/>
+    <circle cx="0" cy="5" r="2" fill="#ffffff"/>
+    <circle cx="15" cy="5" r="2" fill="#ffffff"/>
+    <circle cx="-15" cy="15" r="2" fill="#ffffff"/>
+    <circle cx="0" cy="15" r="2" fill="#ffffff"/>
+    <circle cx="15" cy="15" r="2" fill="#ffffff"/>
+    
+    <!-- Animated Connections -->
+    <line x1="-15" y1="-15" x2="0" y2="-5" stroke="#10b981" stroke-width="2" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="0" y1="-5" x2="15" y2="5" stroke="#8b5cf6" stroke-width="2" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="2.5s" repeatCount="indefinite"/>
+    </line>
+    <line x1="15" y1="5" x2="0" y2="15" stroke="#3b82f6" stroke-width="2" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="1.8s" repeatCount="indefinite"/>
+    </line>
+  </g>
+  
+  <!-- Code Blocks -->
+  <g transform="translate(80, 80)" opacity="0.8">
+    <!-- Code Block 1 -->
+    <rect x="0" y="0" width="60" height="40" rx="4" fill="#1f2937" opacity="0.9"/>
+    <text x="8" y="15" fill="#10b981" font-family="monospace" font-size="8">function</text>
+    <text x="8" y="25" fill="#8b5cf6" font-family="monospace" font-size="8">  return</text>
+    <text x="8" y="35" fill="#3b82f6" font-family="monospace" font-size="8">end</text>
+    
+    <!-- Animated Cursor -->
+    <rect x="8" y="22" width="2" height="2" fill="#ffffff">
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  
+  <g transform="translate(320, 80)" opacity="0.8">
+    <!-- Code Block 2 -->
+    <rect x="0" y="0" width="60" height="40" rx="4" fill="#1f2937" opacity="0.9"/>
+    <text x="8" y="15" fill="#10b981" font-family="monospace" font-size="8">class</text>
+    <text x="8" y="25" fill="#8b5cf6" font-family="monospace" font-size="8">  method</text>
+    <text x="8" y="35" fill="#3b82f6" font-family="monospace" font-size="8">end</text>
+    
+    <!-- Animated Cursor -->
+    <rect x="8" y="32" width="2" height="2" fill="#ffffff">
+      <animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  
+  <!-- Cloud Computing -->
+  <g transform="translate(200, 250)" opacity="0.7">
+    <!-- Cloud Shape -->
+    <ellipse cx="0" cy="0" rx="25" ry="15" fill="#8b5cf6" opacity="0.8"/>
+    <ellipse cx="-15" cy="-5" rx="12" ry="8" fill="#8b5cf6" opacity="0.8"/>
+    <ellipse cx="15" cy="-5" rx="12" ry="8" fill="#8b5cf6" opacity="0.8"/>
+    <ellipse cx="0" cy="-10" rx="8" ry="5" fill="#8b5cf6" opacity="0.8"/>
+    
+    <!-- Data Flow to Cloud -->
+    <path d="M-40 0 Q-20 -10 0 0" stroke="#8b5cf6" stroke-width="2" fill="none" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M40 0 Q20 -10 0 0" stroke="#8b5cf6" stroke-width="2" fill="none" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="2.5s" repeatCount="indefinite"/>
+    </path>
+    
+    <!-- Moving Data Points -->
+    <circle cx="-40" cy="0" r="2" fill="#8b5cf6">
+      <animate attributeName="cx" values="-40;0" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="0;-10;0" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="40" cy="0" r="2" fill="#8b5cf6">
+      <animate attributeName="cx" values="40;0" dur="2.5s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="0;-10;0" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Floating Tech Elements -->
+  <g opacity="0.6">
+    <!-- Database Icon -->
+    <g transform="translate(50, 200)">
+      <rect x="-8" y="-12" width="16" height="24" rx="2" fill="none" stroke="#10b981" stroke-width="2"/>
+      <ellipse cx="0" cy="-12" rx="8" ry="4" fill="none" stroke="#10b981" stroke-width="2"/>
+      <line x1="-6" y1="-6" x2="6" y2="-6" stroke="#10b981" stroke-width="1"/>
+      <line x1="-6" y1="0" x2="6" y2="0" stroke="#10b981" stroke-width="1"/>
+      <line x1="-6" y1="6" x2="6" y2="6" stroke="#10b981" stroke-width="1"/>
+    </g>
+    
+    <!-- Server Icon -->
+    <g transform="translate(350, 200)">
+      <rect x="-12" y="-8" width="24" height="16" rx="2" fill="none" stroke="#8b5cf6" stroke-width="2"/>
+      <rect x="-10" y="-6" width="20" height="4" fill="#8b5cf6"/>
+      <rect x="-10" y="2" width="20" height="4" fill="#8b5cf6"/>
+      <circle cx="-6" cy="0" r="1" fill="#ffffff"/>
+      <circle cx="6" cy="0" r="1" fill="#ffffff"/>
+    </g>
+  </g>
+  
+  <!-- Binary Code Background -->
+  <g opacity="0.3">
+    <text x="10" y="30" fill="#10b981" font-family="monospace" font-size="8">1010</text>
+    <text x="340" y="30" fill="#8b5cf6" font-family="monospace" font-size="8">1100</text>
+    <text x="10" y="270" fill="#3b82f6" font-family="monospace" font-size="8">1111</text>
+    <text x="340" y="270" fill="#06b6d4" font-family="monospace" font-size="8">1001</text>
+  </g>
+  
+  <!-- Particle Effects -->
+  <g opacity="0.5">
+    <circle cx="120" cy="120" r="1" fill="#10b981">
+      <animate attributeName="cy" values="120;100;120" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0.1;0.5" dur="4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="280" cy="140" r="1" fill="#8b5cf6">
+      <animate attributeName="cy" values="140;120;140" dur="3.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0.1;0.5" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="180" cy="180" r="1" fill="#3b82f6">
+      <animate attributeName="cy" values="180;160;180" dur="4.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0.1;0.5" dur="4.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg> 
